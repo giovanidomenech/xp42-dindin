@@ -1,12 +1,11 @@
 body {
-    font-family: 'Ubuntu', arial, sans-serif;
+    font-family: 'Ubuntu', Arial, sans-serif;
 }
 
 main {
     display: flex;
     justify-content: center;
 }
-
 
 header {
     background: #2E948A;
@@ -21,7 +20,6 @@ header h2 a {
     width: 244px;
     height: 77px;
 }
-
 header nav ul {
     display: flex;
     justify-content: center;
@@ -50,7 +48,7 @@ footer {
 footer h2 a {
     display: block;
     color: transparent;
-    background: url('../Imagens/logo-footer.png') 0 0 no-repeat;
+    background: url('../imagens/logo-footer.png') 0 0 no-repeat;
     width: 312px;
     height: 102px;
 }
@@ -77,9 +75,26 @@ footer a {
     text-align: center;
 }
 .container {
-    max-width: 1440px;
+    width: 1440px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0 10px;
+}
+@media only screen and (max-width: 769px) {
+    .container {
+        width: 720px;
+    }
+    
+}
+@media only screen and (max-width: 481px) {
+    .container {
+        width: 460px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    header h2 {
+        margin: 10px 0;
+    }
 }
