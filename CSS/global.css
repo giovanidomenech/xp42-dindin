@@ -1,0 +1,18 @@
+body {
+    font-family: 'Ubuntu', arial, sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    align-content: center;
+}
+
+header {
+    background: #2E948A;
+
+}
+
+footer {
+    background: #419488;
+}
