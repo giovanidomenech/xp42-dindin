@@ -1,45 +1,51 @@
-main .container{
+main { padding-left: 10%; }
+
+main .container {
     justify-content: space-around;
     flex-flow: column;
 }
 
 .hero {
-    background: url(../Imagens/ilustra-banner.png) 100% 50% no-repeat;
+    background: url('../images/ilustra-banner.png') 90% 50% no-repeat;
     padding: 90px 680px 90px 0;
-   
 }
+
 .hero h1 {
-    font-size: 68px;
-    font-weight: 700;
-    line-height: 69px;
-    width: 488px;
     color: #FF4081;
+    font-size: 60px;
+    line-height: 69px;
+    font-weight: 700;
+    width: 360px;
+    margin-bottom: 38px;
 }
-.hero p{
-    font-weight: 400;
+
+.hero p {
+    color: #555555;
     font-size: 27px;
     line-height: 31px;
+    font-weight: 400;
     width: 360px;
-    color: #555555;
     margin-bottom: 38px;
 }
 
 .hero a {
+    color: #FF4081;
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
     line-height: 31px;
-    color: #FF4081;
     text-decoration: none;
     padding: 12px 26px;
     border-radius: 62px;
     border: 2px solid #FF4081;
-    box-sizing: border-box;
 }
 
-.lista-cursos  {
+
+.lista-cursos {
     display: flex;
     justify-content: space-between;
+    background: #F6F6F6;
+    padding: 117px 0;
 }
 
 .lista-cursos .curso {
@@ -47,68 +53,70 @@ main .container{
     text-align: center;
 }
 
-
 .lista-cursos .curso img {
-    margin-top: 223px;
     max-height: 270px;
     margin-bottom: 45px;
-
 }
 
 .lista-cursos .curso h3 {
-
-    font-weight: 700;
     font-size: 25px;
+    font-weight: 700;
     line-height: 29px;
     color: #FF4081;
+    margin-bottom: 23px;
 }
 
 .lista-cursos .curso p {
-    font-weight: 300;
     font-size: 17px;
+    font-weight: 300;
     line-height: 20px;
     color: #000000;
-
+    margin-bottom: 26px;
 }
 
 .lista-cursos .curso a {
-    font-weight: 400;
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
-    color: #FFFFFF;
+    color: white;
     background: #FF4081;
+    border: none;
     border-radius: 62px;
-    text-decoration: none;
     padding: 12px 52px;
+    text-decoration: none;
+}
 
+.lista-depoimentos {
+    padding: 78px 0;
 }
 
 .lista-depoimentos h2 {
-    margin-top: 119px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 37px;
-    line-height: 50px;
     color: #009688;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 50px;
     margin-bottom: 78px;
-
 }
-.lista-depoimentos div {
+
+.lista-depoimentos > div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    column-gap: 100px;
 }
 
 .lista-depoimentos .depoimento {
-    width: 495px;
-    
-
+    display: flex;
+    margin-bottom: 86px;
 }
 
 .lista-depoimentos .depoimento img {
-    float: left;
     margin-right: 28px;
+}
 
+.lista-depoimentos .depoimento p::before,
+.lista-depoimentos .depoimento p::after {
+    content: '"';
 }
 
 .lista-depoimentos .depoimento p {
@@ -116,14 +124,204 @@ main .container{
     font-weight: 300;
     line-height: 25px;
     color: #000000;
-
+    margin: 0 0 7px;
+    width: 410px;
 }
 
 .lista-depoimentos .depoimento small {
-    font-weight: 400;
     font-size: 18px;
+    font-weight: 400;
     line-height: 25px;
-
+    display: block;
     color: #000000;
+}
+
+.lista-posts {
+    background: #E5E5E5;
+    display: flex;
+    flex-flow: column;
+}
+
+.lista-posts h2 {
+    color: #009688;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 43px;
+    margin: 91px 0 73px;
+}
+
+.lista-posts .posts {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 135px;
+}
+
+.lista-posts .post img {
+    max-height: 193px;
+    margin: 0 0 11px;
+}
+
+.lista-posts .post h3 {
+    margin: 0;
+}
+
+.lista-posts .post h3 a {
+    text-decoration: none;
+    color: #009688;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.lista-posts .post p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    max-width: 319px;
+}
+
+.lista-posts .link-blog {
+    text-align: center;
+    margin: 0 0 73px;
+}
+
+.lista-posts .link-blog a {
+    color: #FF4081;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    padding: 10px 41px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 769px) {
+
+    main { 
+        text-align: center;
+        padding-left: 0;
+        margin: 0;
+        
+    }
+
+    .hero {
+        background-image: none;
+        padding: 5% 0 5% 0;
+        margin: 8% 0 8% 25%;
+    }
+
+    .hero a {
+        margin: 5% 0 5% -35%;
+
+    }
+
+    .hero p { padding-bottom: 5%;
+        margin: 8% 0 8% 0%; }
+
+
+    .lista-cursos {
+        display: block;
+        margin: 8% 0 8% 25%;
+
+    }
+
+    .lista-cursos .curso {
+        width: 400px;
+        text-align: center;
+    }
+
+    .lista-depoimentos {
+        display: block;
+        margin: 0% 0 0% 15%;
+    }
+
+    .lista-depoimentos h2, p {
+        padding: 5% 5% 5% 0%;
+    }
+
+    .lista-posts {
+        display: block;
+        margin: 8% 0 8% 25%;
+        width: 600px;
+     
+    }
+
+    .lista-posts h2 p {
+        padding: 5% 5% 5% 5%;
+    }
+
+
+@media only screen and (max-width: 481px) {
+    
+    main { 
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .hero {
+        background-image: none;
+        padding: 5% 0px 5% 0px;
+
+    }
+    
+    .lista-cursos {
+            display: block;
+        }
+    
+    article .curso img {
+            display: none;    
+    
+        }
+        
+    }
+
+
+    .hero a {
+        padding: 2% 0px 2% 0px;
+    }
+
+    .lista-cursos {
+        display: block;
+    }
+
+    article .curso img {
+        display: none;    
+
+    }
+
+    article .curso p, h3, a {
+        padding: 5% 0 5% 0;
+    }
+
+    div .posts {
+        display: table-column;
+    }
+
+    .lista-depoimentos .depoimento p {
+    
+        display: block;
+        width: 310px;
+        padding: 5% 0 5% 0;
+    }
+
+    .lista-posts {
+        width: 400px;
+        text-align: center;
+    }
+
+
+  .lista-posts .posts {
+        display: block;
+}
+
+.lista-posts .posts p {
+    margin: 10%;
+}
+
+   .lista-posts .post img {
+        display: none;
+    }
 
 }

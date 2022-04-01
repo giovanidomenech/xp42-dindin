@@ -1,0 +1,130 @@
+
+hr {
+    color: #C4C4C4;    
+    border-style: inset;
+    border-width: 3px;
+    width: 90%;
+}
+
+article{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;
+    
+}
+
+article video{
+    width: 462px;
+    height: 261px;
+    border: solid;
+}
+
+section h2{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FF4081;
+}
+
+section p{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    width: 500px;
+    color: #000000;
+    margin-bottom: 73px;
+}
+
+.banner{
+    margin: 210px 0 115px 200px;
+    background: url(../images/ilustra-poupando.png) 70% 50% no-repeat;
+    background-size: 380px 380px;
+}
+.banner h1{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 63px;
+    color: #FF4081;
+    width: 512px;
+
+}
+.banner p{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    width: 461px;
+
+}
+
+.content {
+    background: #F7F7F7;
+    padding-top: 75px;
+
+}
+
+
+@media screen and (max-width: 769px){
+
+    article { display: block; text-align: center; }
+
+    article p { width: 400px; margin-left: 25%; }
+
+    article video {
+        width: 562px;
+        height: 361px;
+    }
+
+    .content {
+        padding-top: 5%;
+    }
+
+    .banner {
+        background-image: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;    
+    }
+
+    .banner h1 {
+        margin: 25%;
+        margin-bottom: 2%;
+        width: 400px; 
+    }
+
+    .banner p { margin: 20%; margin-bottom: 2%; margin-top: 10%;}
+
+
+}
+
+@media screen and (max-width: 481px){
+
+    article { display: block; text-align: center; }
+
+    article p { width: 400px; margin-left: 7%; }
+
+    article video {
+        width: 362px;
+        height: 161px;
+    }
+
+    .content {
+        padding-top: 5%;
+    }
+
+    .banner {
+        background-image: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;    
+    }
+
+    .banner h1 {
+        margin: 15%;
+        width: 300px;
+    }
+
+    .banner p { margin: 2%; }
+
+
+}
